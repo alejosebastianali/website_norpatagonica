@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+        margin: 0px;
+    }
+
+.desktop{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mobile{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.desktop img{
+    width: 100%;
+    height: auto;
+}
+
+.mobile img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:768px){
+
+    .desktop{
+    display: none;
+}
+
+    .mobile{
+        display: block;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="desktop">
+        <img src="img/norpa_desktop.jpg" alt="">
+    </div>
+
+
+    <div class="mobile">
+        <img src="img/norpa_mobile.jpg" alt="">
+    </div>
+    
+</body>
+</html>
