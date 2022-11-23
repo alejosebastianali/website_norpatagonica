@@ -1,0 +1,385 @@
+.fondo-navbar{
+    background-color:$colorNorpa;
+}
+
+.logonavbar{
+    img{
+        width: 200px !important;
+        height: auto;
+    }
+}
+
+.dropdownlevel::after{
+    font-family: "Font Awesome 5 Free" !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-weight: 900 !important;
+    content: "\f107" !important;
+    color:#fff !important;
+    padding-left: 5px !important;
+    cursor: pointer !important;
+}
+
+.dropdownlevel01::after{
+    font-family: "Font Awesome 5 Free" !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-weight: 900 !important;
+    content: "\f101" !important;
+    color:#000 !important;
+    padding-left: 5px !important;
+    cursor: pointer !important;
+}
+
+.dropdownlevel02::before{
+    font-family: "Font Awesome 5 Free" !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-weight: 900 !important;
+    content: "\f107" !important;
+    color:#000 !important;
+    padding-left: 5px !important;
+    cursor: pointer !important;
+}
+
+.saltar{
+    display: none;
+}
+
+.dropdown-toggle::after{
+    display: none !important;
+}
+
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+	.dropdown-menu li{
+		position: relative;
+	}
+	.dropdown-menu .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%;
+        top:10px;
+	}
+	.dropdown-menu .submenu-left{ 
+		right:auto;
+        left:100%;
+	}
+
+	.dropdown-menu > li:hover{
+        background-color: #f1f1f1
+    }
+
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+
+    .saltar{
+        display: block;
+    }
+
+    .dropdown-menu .dropdown-menu{
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom: 10px;
+    }
+
+}	
+/* ============ small devices .end// ============ */
+
+
+
+/* ============ Viejo navbar// ============ */
+
+/*
+    nav{
+        background-color: $colorNorpa;
+        padding:  15px;
+
+        ul{
+            font-family: "Roboto-Regular";
+            font-size: 16px;
+            font-weight: normal ;
+        }
+
+    }
+
+    a{
+        color: white !important ;
+        text-decoration: none !important;
+    }
+
+    .menu,
+    .submenu{
+        list-style-type: none;
+        padding-left: 0px !important;
+
+    }
+
+    .logo{
+        font-size: 20px;
+        padding: 7.5px 10px 7.5px 0px;
+
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    .item{
+        padding: 10px;
+    }
+
+    .item.button{
+        padding: 9px 5px;
+    }
+
+    .item:not(.button) a:hover,
+    .item a:hover::after{
+        color: rgba(255, 255, 255, .5);
+    }
+
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu li a{
+        display: block;
+        padding: 15px 5px;
+    }
+
+    .menu li.subitem a {
+        padding: 15px;
+    }
+
+    .toggle{
+        order: 1;
+        font-size: 20px;
+    }
+
+    .item.button{
+        order: 2;
+    }
+
+    .item{
+        order: 3;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .item:hover{
+        cursor: pointer;
+    }
+
+    .active.item{
+        display: block;
+    }
+
+
+
+    .submenu{
+        display: none;
+        width: auto;
+        z-index: 1000;
+
+    }
+
+    .submenu-active .submenu{
+        display: block;
+    }
+
+    .dropdownlevel::after{
+        font-family: "Font Awesome 5 Free";
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 900;
+        content: "\f107";
+        color:#fff;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+    .subitem{
+        width: 150px;
+        margin: auto;
+    }
+
+    .subitem a{
+        padding: 10px 15px;
+    }
+
+    .submenu:hover{
+        background-color: #111;
+        cursor: pointer;
+        transition: all 2s ;
+    }
+
+    .subitem:hover{
+        border-bottom: 1px solid #fff;
+        cursor: pointer;
+    }
+
+
+
+    .dropdown:hover >.dropdown-menu{
+        display: block !important;
+    }
+    .dropdown-submenu:hover > .dropdown-menu{
+        display: block !important;
+        margin-bottom: 40px;
+    }
+    
+    .dropdown-item{
+        font-size: small; 
+    }
+    .dropdown-toggle::after{
+        font-size: var(--font-md);
+        margin-bottom: -2px;
+    }
+    .dropdown-menu li a.active{
+        color:red !important;
+    }
+
+    .dropdown-menu li a{
+        color:red !important;
+    }
+    
+    .custom-toggle-arrow{
+            font-size: 18px;
+            margin-top: 1px;
+            line-height: 12px;
+    }
+
+
+
+
+    .submenu-activo{
+        display: block;
+        background-color: green;
+    }
+
+    .submenu-remove{
+        display: none;
+        background-color: red;
+    }
+
+
+    .dropdown-submenu>.dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu>a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover>a:after {
+        border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+    .dropdown-submenu.pull-left>.dropdown-menu {
+        left: -100%;
+        margin-left: 10px;
+        -webkit-border-radius: 6px 0 6px 6px;
+        -moz-border-radius: 6px 0 6px 6px;
+        border-radius: 6px 0 6px 6px;
+    }
+
+
+    @media all and (min-width:700px){
+        .menu{
+            justify-content: center;
+        }
+
+        .logo{
+            flex: 1;
+        }
+
+        .item.button{
+            width: auto;
+            order: 1;
+            display: block;
+        }
+
+        .item2.button{
+            width: auto;
+            order: 1;
+            display: block;
+        }
+
+        .toggle{
+            flex: 1;
+            text-align: right;
+            order: 2;
+        }
+
+    }
+
+
+    @media all and (min-width:960px){
+        .item{
+            order:1;
+            position: relative;
+            display: block;
+            width: auto;
+        }
+
+        .button{
+            order: 2;
+        }
+
+        .submenu-active .submenu{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 68px;
+            background-color: #2c9e2e;
+            border-radius: 5px;
+        }
+
+        .toggle{
+            display: none;
+        }
+
+        .submenu-active{
+            border-radius: 0;
+        }
+
+    }
+
+*/

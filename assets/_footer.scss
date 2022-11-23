@@ -1,0 +1,214 @@
+footer#datos{
+
+    .cont-footer{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        background-image: url(..//img/img_footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+
+            h1{
+                font-family: $bajadas;
+                font-size: 19px;
+                color:#ffffff ;
+                font-weight: normal;
+                margin: 0px 0px 20px 0px;
+            }
+
+            h2{
+                font-family:$bajadas;
+                font-size: 15px;
+                color:#ffffff ;
+                font-weight: normal;
+                margin: 0px;
+                line-height: 24px;
+            }
+
+            a{
+                color: #fff;
+            }
+
+            a:link {
+                color: none;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: #fff;
+            }
+
+            a:hover{
+                opacity: .8;
+            }
+
+            a:active{
+                color: #7c7c7c;
+            }
+
+            .linea-titulo{
+                width: 50px;
+                border: 1px solid #ffffff;
+                margin-left: 0px;
+
+            }
+
+            .footer-01{
+                width: 25%;
+                height: auto;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+            }
+
+            .footer-02{
+                width: 25%;
+                height: auto;
+            }
+
+            .footer-03{
+                width: 25%;
+                height: auto;
+            }
+
+            .footer-04{
+                width: 25%;
+                height: auto;
+            }
+
+            .footer-05{
+                width: 25%;
+                height: auto;
+
+                .cont-redes{
+                    width: 190px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
+            }
+
+            .logo-redes{
+                width: 50px;
+                padding: 10px;
+
+                img{
+                    width: 50px;
+                    height: auto;
+
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+    }
+
+}
+
+
+
+
+@media screen and (max-width:767px){
+
+    footer#datos{
+
+        .cont-footer{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background-image: url(..//img/img_footer.jpg);
+           
+    
+                h1{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 19px;
+                    color:#ffffff ;
+                    font-weight: normal;
+                    margin: 0px 0px 20px 0px;
+                }
+    
+                h2{
+                    font-family:Arial, Helvetica, sans-serif ;
+                    font-size: 15px;
+                    color:#ffffff ;
+                    font-weight: normal;
+                    margin: 0px;
+                    line-height: 24px;
+                }
+
+                
+                .linea-titulo{
+                    width: 50px;
+                    border: 1px solid #ffffff;
+                    margin-left: 0px;
+    
+                }
+    
+                .footer-01{
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                    display: block;
+                    align-items: center;
+                    align-content: center;
+                    
+                    img{
+                        width: 100%;
+                        height: auto;
+                        margin: auto;
+
+                    }
+                }
+    
+                .footer-02{
+                    width: 100%;
+                    height: auto;
+                    margin: 30px 0px;
+                }
+    
+                .footer-03{
+                    width: 100%;
+                    height: auto;
+                    margin: 30px 0px;
+                }
+    
+                .footer-04{
+                    width: 100%;
+                    height: auto;
+                    margin: 30px 0px;
+                }
+    
+                .footer-05{
+                    width: 100%;
+                    height: auto;
+                    margin: 30px 0px;
+    
+                    .cont-redes{
+                        margin: auto;
+                    }
+
+                    h1{
+                        text-align: center;
+                    }
+    
+                }
+
+        }
+    
+    }
+
+    
+}

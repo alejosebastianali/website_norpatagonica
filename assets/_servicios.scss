@@ -1,0 +1,277 @@
+section#desarrollos{
+    width: 100%;
+    height: auto;
+    background-color: $colorFondo02;
+    display: flex;
+    flex-direction: column;
+
+    .cont-desarrollos{
+        width: 100%;
+        height: auto;
+        padding: 0px 100px;
+        margin-top: -300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .card-desarrollos{
+            width: 27%;
+            height: 450px;
+            margin: 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-imagen{
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .card-descripcion{
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: -100px;
+
+            h5{
+                font-family: $titulares4;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: $colorTitulo02 ;
+                text-align: center;
+            }
+
+            p{
+                font-family: "Roboto-Regular";
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: normal;
+                margin-bottom: 10px;
+                color: $colorTexto02;
+                text-align: justify;
+            }
+        }
+
+        .cont-card-boton{
+            width: 100%;
+            height: auto;
+            padding: 0px 20px 20px 20px ;
+            background-color: #fff;
+            box-sizing: border-box;
+
+            .card-boton{
+                width: 100px;
+                height: 50px;
+                margin: auto;
+                border-radius:50px;
+                background-color: $colorNorpa;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                box-sizing: border-box;
+
+                .texto-boton{
+                    width: 70px;
+                    padding-top: 10px;
+                    margin: auto;
+                    box-sizing: border-box;
+
+                    h5{
+                        font-family: "Roboto-Black";
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        color: #fff;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .cont-notajumbo{
+        width: 100%;
+        height: auto;
+        padding: 0px 100px;
+        margin: 100px 0px 0px 0px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .notajumbo-descripcion{
+            width: 48%;
+
+            h1{
+                font-family: $titulares5;
+                font-size: 40px;
+                font-weight: bold;
+                margin-bottom: 50px;
+                color: #fff;
+                letter-spacing: 1px;
+                line-height: 40px;
+            }
+
+            h4{
+                font-family: $bajadas3;
+                font-size: 20px;
+                font-weight: normal;
+                color: #fff;
+                line-height: 40px;
+            }
+
+            .nota-boton{
+                width: 200px;
+                height: 60px;
+                margin: 20px 0px;
+                border-radius:50px;
+                border: 2px solid #fff;
+                background-color: $colorBoton01;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: .5s;
+    
+                .texto-boton{
+                    width: 150px;
+                    padding-top: 18px;
+                    margin: auto;
+                    box-sizing: border-box;
+    
+                    h5{
+                        font-family: "Roboto-Regular";
+                        font-size: 16px;
+                        font-weight: normal;
+                        margin-bottom: 10px;
+                        color: #fff;
+                        text-align: center;
+                    }
+    
+                }
+
+                &:hover{
+                    background-color: $colorBoton01hover;
+                    transition: .5s;
+                }
+            }
+
+        }
+
+        .notajumbo-imagen{
+            width: 48%;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .diagonal-top, .diagonal-bottom{
+        width: 100%;
+        line-height:5px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media all and (max-width:768px){
+
+    section#desarrollos{
+    
+        .cont-desarrollos{
+            width: 100%;
+            height: auto;
+            padding: 0px 20px;
+            margin-top: -90px;
+            flex-direction: column;
+    
+            .card-desarrollos{
+                width: 100%;
+                margin: 20px 0px;
+            }
+    
+            .card-descripcion{
+    
+                h5{
+                    font-size: 18px;
+                }
+    
+                p{
+                    font-size: 14px;
+                }
+            }
+    
+            .card-boton{
+                width: 100px;
+                height: 50px;
+                margin: 0px auto 20px auto;
+                border-radius:50px;
+                background-color: $colorNorpa;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+    
+                .texto-boton{
+                    width: 70px;
+                    padding-top: 10px;
+                    margin: auto;
+                    box-sizing: border-box;
+    
+                    h5{
+                        font-size: 16px;
+                    }
+    
+                }
+            }
+        }
+    
+        .cont-notajumbo{
+            width: 100%;
+            padding: 0px 20px;
+            margin: 100px 0px 50px 0px;
+            flex-direction: column;
+    
+            .notajumbo-descripcion{
+                width: 100%;
+    
+                h1{
+                    font-size: 40px;
+                }
+    
+                h4{
+                    font-size: 20px;
+                }
+            }
+    
+            .notajumbo-imagen{
+                width: 100%;
+    
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    
+    }
+
+}

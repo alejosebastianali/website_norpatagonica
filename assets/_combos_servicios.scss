@@ -1,0 +1,137 @@
+section#combos{
+    width: 100%;
+    height: auto;
+    background-color: $colorFondo01;
+    padding: 100px;
+
+    .tit-combos{
+        width: 100%;
+        height: auto;
+
+        h2{
+            font-family: $titulares4;
+            font-size: 40px ;
+            font-weight: normal ;
+            color: $colorTitulo01;
+            margin: 0px 0px 50px 0px;
+        }
+    }
+
+    .cont-combos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .combos{
+            width: 49%;
+            height: 190px;
+            padding: 30px;
+            margin: 15px 0px;
+            background-color: #fff;
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 10px 10px 10px rgb(218, 218, 218);
+
+            .cont-datacombo{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                align-items: center;
+                align-content: center;
+
+                .logo-combo{
+                    width: 100px;
+                    height: auto;
+                }
+
+                .texto-combo{
+                    width: 100%;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+
+                    h5{
+                        font-family: $titulares5;
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        color: $colorTitulo02 ;
+                    }
+
+                    p{
+                        font-family: $bajadas4;
+                        font-size: 18px;
+                        font-weight: normal;
+                        color: $colorTexto01 ;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media all and (max-width:768px){
+
+    section#combos{
+        padding: 20px;
+    
+        .tit-combos{
+    
+            h2{
+                font-size: 30px ;
+                text-align: center;
+                margin-top: 50px;
+            }
+        }
+    
+        .cont-combos{
+            flex-direction: column;
+    
+            .combos{
+                width: 100%;
+                height: 300px;
+                padding: 20px;
+                margin: 15px 0px;
+  
+                .cont-datacombo{
+                    flex-direction: column;
+    
+                    .logo-combo{
+                        width: 120px;
+                        height: auto;
+                    }
+    
+                    .texto-combo{
+                        width: 100%;
+                        padding-left: 0px;
+                        box-sizing: border-box;
+    
+                        h5{
+                            font-family: "Roboto-Black";
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                            color: $colorTitulo02 ;
+                            text-align: center;
+                        }
+    
+                        p{
+                            font-family: "Roboto-Regular";
+                            font-size: 18px;
+                            font-weight: normal;
+                            color: $colorTexto01 ;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+

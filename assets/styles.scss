@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(..//fonts/Roboto-Thin.woff);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(..//fonts/Roboto-Light.woff);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(..//fonts/Roboto-Bold.woff);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(..//fonts/Roboto-Regular.woff);
+}
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url(..//fonts/Roboto-Black.woff);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(..//fonts/Montserrat-Light.woff);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(..//fonts/Montserrat-Medium.woff);
+}
+
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(..//fonts/Montserrat-Black.woff);
+}
+
+//Fuentes Generales
+
+$slider1: 'Roboto-Thin', sans-serif;
+$slider2: 'Roboto-Light', sans-serif;
+$slider3: 'Montserrat-Light', sans-serif;
+$slider4: 'Montserrat-Medium', sans-serif;
+
+$bajadas: 'Roboto-Regular', sans-serif;
+$bajadas2: 'Roboto-Bold', sans-serif;
+$bajadas3: 'Montserrat-Light', sans-serif;
+$bajadas4: 'Montserrat-Medium', sans-serif;
+
+$titulares1: 'Roboto-Bold', sans-serif;
+$titulares2: 'Roboto-Black', sans-serif;
+$titulares3: 'Montserrat-Light', sans-serif;
+$titulares4: 'Montserrat-Medium', sans-serif;
+$titulares5: 'Montserrat-Black', sans-serif;
+
+
+$regular: 400;
+$medium: 500;
+$semibold: 700;
+$bold: 900;
+
+//Colores Generales
+$colorNorpa:#31B133;
+$colorNorpaHover:#2d9e2e;
+$colorBoton01:#f39200;
+$colorBoton01hover:#f36600;
+
+
+$colorFondo01:#f3f3f3;
+$colorFondo02:#63d46c;
+
+$colorTitulo01:#575757;
+$colorTitulo02:#62d269;
+
+$colorTexto01:#d7d8da;
+$colorTexto02:#575757;
+
+//Colores Footer
+$textoFooter:#ffffff;
+
+// Compilado de archivos
+@import "..//assets/navbar";
+@import "..//assets/combos_servicios";
+@import "..//assets/servicios";
+@import "..//assets/clientes";
+@import "..//assets/footer";
+@import "..//assets/carousel";
