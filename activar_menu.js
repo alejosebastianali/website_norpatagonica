@@ -37,7 +37,7 @@ function toggleMenu() {
     }
 }
 
-toggle.addEventListener('click', toggleMenu, false)
+toggle.addEventListener('click', toggleMenu, false);
 
 
 
@@ -63,45 +63,4 @@ for (let item of items) {
 }
 
 document.addEventListener('click', closeSubmenu, false);
-
-
-
-//Submenu Submenu
-
-const items2 = document.querySelectorAll('.item2');
-
-function toggleItem2() {
-    if (this.classList.contains("submenu-active2")) {
-        this.classList.remove("submenu-active2");
-    } else if (menu.querySelector(".submenu-active2")){
-        menu.querySelector(".submenu-active2").classList.remove("submenu-active2");
-        this.classList.add("submenu-active2");
-    } else {
-        this.classList.add("submenu-active2");
-    }
-}
-
-for (let item of items2) {
-    if (item.querySelector('.submenu2')) {
-        item.addEventListener('click', toggleItem2, false);
-        item.addEventListener('keypress', toggleItem2, false);
-    }
-}
-
-document.addEventListener('click', closeSubmenu2, false);
-
-//function closeSubmenu(e) {
-//    let isClickInside = menu.contains(e.target);
-//
-//    if (!isClickInside && menu.querySelector('.submenu-active')){
-//        menu.querySelector('submenu-active').classList.remove('.submenu-active');
-//    }
-//}
-
-
-
-
-
-
-
 
